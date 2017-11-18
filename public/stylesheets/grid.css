@@ -1,0 +1,56 @@
+#site{
+  display:grid;
+  max-width: 100%;
+  margin: 0px auto;
+  grid-template:
+    "headerGrid"
+    "menuGrid"
+    "newContentGrid";
+  grid-template-rows: minmax(200px, auto) 1fr auto;
+}
+
+headerGrid {
+  grid-area: headerGrid;
+  background-color: #8ca0ff;
+}
+menuGrid {
+  grid-area: menuGrid;
+  background-color: #ffa08c;
+}
+contentGrid {
+  grid-area: contentGrid;
+  background-color: #747474;
+  padding-top: 3px;
+}
+newContentGrid {
+  grid-area: newContentGrid;
+  display: inline-grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #FFE400;
+  grid-gap: 1em;
+  padding-top: 5px;
+}
+
+.hero-image {
+  background-image: url("https://farm6.static.flickr.com/5571/30004240504_04bbde976c_b.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  height: 100%;
+}
+
+newContentGrid > div {
+  padding: 3px 3px;
+  background-color: #ddd;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  flex:block;
+  align-items: center;
+  justify-content: center;
+}
+
+newContentGrid > div:nth-child(even){
+  background:#747474;
+}

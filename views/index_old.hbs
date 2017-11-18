@@ -1,0 +1,50 @@
+
+<link href="./stylesheets/bar-style.css" type="text/css" rel="stylesheet">
+<link href="./stylesheets/grid.css" type="text/css" rel="stylesheet">
+<link href="./stylesheets/style.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <div id="site">
+    <headerGrid>
+      <div class="hero-image">
+      </div>
+    </headerGrid>
+    <menuGrid>
+      <div class="icon-bar">
+        <a class="active" href="#"><i class="material-icons">home</i></a>
+        <a class="active" href="#"><i class="material-icons">security</i></a>
+        <a class="active" href="#"><i class="material-icons">battery_alert</i></a>
+        <a class="active" href="#"><i class="material-icons">lock_outline</i></a>
+        <a class="active" href="#"><i class="material-icons">settings</i></a>
+      </div>
+    </menuGrid>
+
+    <newContentGrid>
+      <div id="contentdiv-1"> <button id="contentdiv-1-btn" onClick="updateCard('contentdiv-1')"> Update this Card </button> </div>
+      {{#each cards}}
+        {{{this}}}
+      {{/each}}
+      <div>
+        <div display: "flex" flex-direction: "row" align-items: "center">
+          <i class="material-icons">settings</i><input name="username" type="text" class="input username" placeholder="Username" />
+        </div>
+        <i class="material-icons">settings</i>
+        <div class="user-icon"></div>
+
+      </div>
+      <div> text </div>
+      <div> text </div>
+      <div> text </div>
+      <div> text </div>
+      <div> text </div>
+      <div> text </div>
+      <div> text </div>
+      <div> text </div>
+      <div> text </div>
+      <div> text </div>
+      <div> text </div>
+      <div> text </div>
+      <div> text </div>
+      <div> text </div>
+    </newContentGrid>
+  </div>

@@ -1,0 +1,50 @@
+body {
+  padding: 10px 10px 10px 10px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+
+/* Input field */
+.input {
+	width: 50%;
+	padding: 15px 25px;
+
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-size: 22px;
+	color: #9d9e9e;
+	text-shadow: 1px 1px 0 rgba(256,256,256,1.0);
+
+	background: #fff;
+	border: 1px solid #fff;
+	border-radius: 0px;
+
+}
+
+.input:hover {
+	background: #dfe9ec;
+	color: #414848;
+}
+
+.input:focus {
+	background: #dfe9ec;
+	color: #414848;
+}
+
+.user-icon {
+	width: 46px;
+	height: 47px;
+
+
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+
+.user-icon {
+	background: rgba(65,72,72,0.75) url(http://www.demo.amitjakhu.com/login-form/images/user-icon.png) no-repeat center;
+}
+
+.pass-icon {
+	background: rgba(65,72,72,0.75) url(http://www.demo.amitjakhu.com/login-form/images/pass-icon.png) no-repeat center;
+}

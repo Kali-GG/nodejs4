@@ -1,0 +1,20 @@
+
+<h1> {{ title }} </h1>
+<p> Welcome to {{ title }} </p>
+
+<p> your id: {{ output }} </p>
+
+{{#each items}}
+  {{this.accountName}} <br>
+  {{this.email}} <br>
+{{/each}}
+
+{{# if condition }}
+  true
+{{ else }}
+  false
+{{/if}}
+
+{{# each anArray as |val key|}}
+  {{ key }} : {{ val }},
+{{/each}}
